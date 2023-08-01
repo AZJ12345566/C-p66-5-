@@ -9,7 +9,7 @@ struct S
 };
 int main()
 {
-    int S s;
+    struct S s;
     printf("%d\n",sizeof(s));//输出为4，它并没包含这个数组成员
     struct S* ps=(struct S*)malloc(sizeof(struct S)+5*sizeof(int));
     ps->n=100;
